@@ -1,0 +1,147 @@
+Classfile /C:/ideaProject/out/production/ideaProject/org/wy/dataStructure/BinarySearchTree.class
+  Last modified 2019-8-24; size 859 bytes
+  MD5 checksum 427092f7eded0b7ef73f4b73242eb615
+  Compiled from "BinarySearchTree.java"
+public class org.wy.dataStructure.BinarySearchTree
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #11.#31        // java/lang/Object."<init>":()V
+   #2 = Long               9223372036854775807l
+   #4 = Long               -9223372036854775808l
+   #6 = Methodref          #10.#32        // org/wy/dataStructure/BinarySearchTree.isBST:(Lorg/wy/dataStructure/TreeNode;JJ)Z
+   #7 = Fieldref           #33.#34        // org/wy/dataStructure/TreeNode.val:I
+   #8 = Fieldref           #33.#35        // org/wy/dataStructure/TreeNode.left:Lorg/wy/dataStructure/TreeNode;
+   #9 = Fieldref           #33.#36        // org/wy/dataStructure/TreeNode.right:Lorg/wy/dataStructure/TreeNode;
+  #10 = Class              #37            // org/wy/dataStructure/BinarySearchTree
+  #11 = Class              #38            // java/lang/Object
+  #12 = Utf8               <init>
+  #13 = Utf8               ()V
+  #14 = Utf8               Code
+  #15 = Utf8               LineNumberTable
+  #16 = Utf8               LocalVariableTable
+  #17 = Utf8               this
+  #18 = Utf8               Lorg/wy/dataStructure/BinarySearchTree;
+  #19 = Utf8               isValidBST
+  #20 = Utf8               (Lorg/wy/dataStructure/TreeNode;)Z
+  #21 = Utf8               root
+  #22 = Utf8               Lorg/wy/dataStructure/TreeNode;
+  #23 = Utf8               isBST
+  #24 = Utf8               (Lorg/wy/dataStructure/TreeNode;JJ)Z
+  #25 = Utf8               max
+  #26 = Utf8               J
+  #27 = Utf8               min
+  #28 = Utf8               StackMapTable
+  #29 = Utf8               SourceFile
+  #30 = Utf8               BinarySearchTree.java
+  #31 = NameAndType        #12:#13        // "<init>":()V
+  #32 = NameAndType        #23:#24        // isBST:(Lorg/wy/dataStructure/TreeNode;JJ)Z
+  #33 = Class              #39            // org/wy/dataStructure/TreeNode
+  #34 = NameAndType        #40:#41        // val:I
+  #35 = NameAndType        #42:#22        // left:Lorg/wy/dataStructure/TreeNode;
+  #36 = NameAndType        #43:#22        // right:Lorg/wy/dataStructure/TreeNode;
+  #37 = Utf8               org/wy/dataStructure/BinarySearchTree
+  #38 = Utf8               java/lang/Object
+  #39 = Utf8               org/wy/dataStructure/TreeNode
+  #40 = Utf8               val
+  #41 = Utf8               I
+  #42 = Utf8               left
+  #43 = Utf8               right
+{
+  public org.wy.dataStructure.BinarySearchTree();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 18: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lorg/wy/dataStructure/BinarySearchTree;
+
+  public boolean isValidBST(org.wy.dataStructure.TreeNode);
+    descriptor: (Lorg/wy/dataStructure/TreeNode;)Z
+    flags: ACC_PUBLIC
+    Code:
+      stack=6, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: ldc2_w        #2                  // long 9223372036854775807l
+         5: ldc2_w        #4                  // long -9223372036854775808l
+         8: invokevirtual #6                  // Method isBST:(Lorg/wy/dataStructure/TreeNode;JJ)Z
+        11: ireturn
+      LineNumberTable:
+        line 22: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0  this   Lorg/wy/dataStructure/BinarySearchTree;
+            0      12     1  root   Lorg/wy/dataStructure/TreeNode;
+
+  public boolean isBST(org.wy.dataStructure.TreeNode, long, long);
+    descriptor: (Lorg/wy/dataStructure/TreeNode;JJ)Z
+    flags: ACC_PUBLIC
+    Code:
+      stack=6, locals=6, args_size=4
+         0: aload_1
+         1: ifnonnull     6
+         4: iconst_1
+         5: ireturn
+         6: aload_1
+         7: getfield      #7                  // Field org/wy/dataStructure/TreeNode.val:I
+        10: i2l
+        11: lload         4
+        13: lcmp
+        14: ifle          27
+        17: aload_1
+        18: getfield      #7                  // Field org/wy/dataStructure/TreeNode.val:I
+        21: i2l
+        22: lload_2
+        23: lcmp
+        24: iflt          29
+        27: iconst_0
+        28: ireturn
+        29: aload_0
+        30: aload_1
+        31: getfield      #8                  // Field org/wy/dataStructure/TreeNode.left:Lorg/wy/dataStructure/TreeNode;
+        34: aload_1
+        35: getfield      #7                  // Field org/wy/dataStructure/TreeNode.val:I
+        38: i2l
+        39: lload         4
+        41: invokevirtual #6                  // Method isBST:(Lorg/wy/dataStructure/TreeNode;JJ)Z
+        44: ifeq          68
+        47: aload_0
+        48: aload_1
+        49: getfield      #9                  // Field org/wy/dataStructure/TreeNode.right:Lorg/wy/dataStructure/TreeNode;
+        52: lload_2
+        53: aload_1
+        54: getfield      #7                  // Field org/wy/dataStructure/TreeNode.val:I
+        57: i2l
+        58: invokevirtual #6                  // Method isBST:(Lorg/wy/dataStructure/TreeNode;JJ)Z
+        61: ifeq          68
+        64: iconst_1
+        65: goto          69
+        68: iconst_0
+        69: ireturn
+      LineNumberTable:
+        line 33: 0
+        line 34: 6
+        line 35: 29
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      70     0  this   Lorg/wy/dataStructure/BinarySearchTree;
+            0      70     1  root   Lorg/wy/dataStructure/TreeNode;
+            0      70     2   max   J
+            0      70     4   min   J
+      StackMapTable: number_of_entries = 5
+        frame_type = 6 /* same */
+        frame_type = 20 /* same */
+        frame_type = 1 /* same */
+        frame_type = 38 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+}
+SourceFile: "BinarySearchTree.java"

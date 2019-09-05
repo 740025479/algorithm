@@ -1,0 +1,15 @@
+
+Š squid:ForLoopCounterChangedCheck“"XRefactor the code in order to not assign to this loop counter from within the loop body.(¥ß™úûÿÿÿÿ
+P
+squid:S106"9Replace this use of System.out or System.err by a logger.(ïÍØƒ
+Dsquid:S1172Ô",Remove this unused method parameter "start".(ËÂÏ˜
+csquid:CommentedOutCodeLineİ"<This block of commented-out lines of code should be removed.(†€ 
+P
+squid:S106ı"9Replace this use of System.out or System.err by a logger.(×Æáî
+Š squid:ForLoopCounterChangedCheck•"XRefactor the code in order to not assign to this loop counter from within the loop body.(•›šöÿÿÿÿÿ
+Š squid:ForLoopCounterChangedCheck‘"XRefactor the code in order to not assign to this loop counter from within the loop body.(¥ß™úûÿÿÿÿ
+P
+squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(ïÍØƒ
+U
+squid:S106ÿ"9Replace this use of System.out or System.err by a logger.(¿àÇúÿÿÿÿ
+Š squid:ForLoopCounterChangedCheck"XRefactor the code in order to not assign to this loop counter from within the loop body.(•›šöÿÿÿÿÿ
