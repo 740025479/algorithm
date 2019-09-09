@@ -7,7 +7,9 @@ public class Num143 {
 
     public void reorderList(ListNode head) {
 
-        if (head == null) return;
+        if (head == null) {
+            return;
+        }
         left = head;
         isStop = false;
         digui(head);
@@ -29,7 +31,7 @@ public class Num143 {
             ListNode next = left.next;
             left.next = right;
             left = next;
-            if (left.next == right) {
+            if (next == right) {
                 right.next = null;
                 isStop = true;
             } else {
