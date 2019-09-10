@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8d7b52-64a5-4e98-a04f-77c6443bfa14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/wy/dataStructure/listnode/Num92.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/wy/dataStructure/listnode/Num234.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -138,7 +138,7 @@
       <workItem from="1566573317010" duration="31523000" />
       <workItem from="1567043522429" duration="23136000" />
       <workItem from="1567853042664" duration="11255000" />
-      <workItem from="1567945846045" duration="3499000" />
+      <workItem from="1567945846045" duration="12771000" />
     </task>
     <task id="LOCAL-00001" summary="链表专项训练">
       <created>1567864542772</created>
@@ -147,7 +147,28 @@
       <option name="project" value="LOCAL" />
       <updated>1567864542772</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="链表的递归需要掌握，因为在归的过程中可以拿到前面的节点。&#10;而一般单向链表的迭代只能通过前面节点推导出后面节点">
+      <created>1567951309036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567951309037</updated>
+    </task>
+    <task id="LOCAL-00003" summary="重排链表Num143还没通过">
+      <created>1567996494679</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567996494679</updated>
+    </task>
+    <task id="LOCAL-00004" summary="反转链表，递归和迭代的实现">
+      <created>1568098558869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568098558869</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +189,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="链表专项训练" />
-    <option name="LAST_COMMIT_MESSAGE" value="链表专项训练" />
+    <MESSAGE value="链表的递归需要掌握，因为在归的过程中可以拿到前面的节点。&#10;而一般单向链表的迭代只能通过前面节点推导出后面节点" />
+    <MESSAGE value="重排链表Num143还没通过" />
+    <MESSAGE value="反转链表，递归和迭代的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="反转链表，递归和迭代的实现" />
   </component>
 </project>
