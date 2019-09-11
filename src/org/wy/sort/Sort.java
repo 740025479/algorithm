@@ -122,9 +122,55 @@ public class Sort {
      * 归并排序
      * 时间复杂度：nlogn
      * 空间复杂度：占用n内存
-     * 稳定性：稳定
+     * 稳定性：稳定  对于对象来说，要稳定 所以Collections.sort()底层是归并，时间复杂度最低的稳定排序算法
+     *                                      Arrays.sort()底层是快排改进版
      * 原理：分成元素数只有1的数组，然后再merge两个有序数组，最终合并成一个完整的
      */
+    public void MergeSort(int[] arr){
+
+        if (arr.length<1){return;}
+        mergeSort(arr,0,arr.length-1);
+
+    }
+
+    private void mergeSort(int[] arr,int start,int end){
+        if (start>=end){return;}
+        int mid = start + (end-start)/2;
+        mergeSort(arr,start,mid);
+        mergeSort(arr,mid+1,end);
+        merge(arr,start,mid,end);
+    }
+
+    private void merge(int[] arr, int start, int mid, int end) {
+        int p = start;
+        int q = mid+1;
+        int res = 0;
+        int[] temp = new int[end-start+1];
+        while (p<=mid&&q<=end){
+            if (arr[p]<=arr[q]){
+                temp[res]=arr[p];
+                p++;
+            }else {
+                temp[res]=arr[q];
+                q++;
+            }
+            res++;
+        }
+        while (p<=mid){
+            temp[res]=arr[p];
+            p++;
+            res++;
+        }
+        while (q<=end){
+            temp[res]=arr[q];
+            q++;
+            res++;
+        }
+        for (int i = 0; i < temp.length; i++) {
+            arr[i+start]=temp[i];
+        }
+    }
+
     public int[] mergeSort(int[] arr) {
         if (arr.length <= 1) {
             return arr;
@@ -257,6 +303,11 @@ public class Sort {
         System.out.println(Arrays.toString(arr2));
         sort.heapSort(arr2);
         System.out.println(Arrays.toString(arr2));
+
+
+        int[] arr4 = new int[] { 145, 23, 6, 55, 64, 86, 4, 66, 11, 36, 71, 17 };
+        sort.MergeSort(arr4);
+        System.out.println(Arrays.toString(arr4));
     }
 
 }
