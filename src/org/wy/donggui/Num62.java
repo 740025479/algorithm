@@ -3,7 +3,6 @@ package org.wy.donggui;
 public class Num62 {
 
     public int uniquePaths(int m, int n) {
-
         int[][] dp = new int[n][m];
         for (int i = 0; i < n; i++) {
             dp[i][0]=1;
