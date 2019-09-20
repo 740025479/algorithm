@@ -1,14 +1,6 @@
 package org.wy.dataStructure.tree;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    public TreeNode(int val) {
-        this.val = val;
-    }
-}
 
 /**
  * 二叉搜索树
