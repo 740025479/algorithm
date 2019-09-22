@@ -29,10 +29,14 @@ public class BigNum {
 
 
 
-        int internal = 0;
-        for (int i = 0; i < res.length; i++) {
-            res[i]+=internal;
-            internal = res[i]/10;
+//        int internal = 0;
+//        for (int i = 0; i < res.length; i++) {
+//            res[i]+=internal;
+//            internal = res[i]/10;
+//            res[i]%=10;
+//        }
+        for (int i = 0; i < res.length-1; i++) {
+            res[i+1]+=res[i]/10;
             res[i]%=10;
         }
         StringBuilder ans = new StringBuilder();
